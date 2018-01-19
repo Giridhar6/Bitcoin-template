@@ -1,0 +1,105 @@
+
+.menu-container mat-toolbar mat-toolbar-row a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.bit-coin-icon {
+  /* max-width: 140%; */
+  height: auto;
+  vertical-align: middle;
+}
+
+div.page-title {
+  width: 100%;
+  text-align: center;
+}
+
+div.page-title h1 {
+  font-weight: 800;
+  font-size: 130%;
+}
+
+
+
+
+
+.price.header {
+    text-align: center;
+    margin: auto;
+    color: white
+  }
+  .toolbar{
+    background: linear-gradient(to right, rgba(4, 155, 226, 0.9), rgba(16, 86, 189, 0.92));
+    background-color:#3991ca
+  }
+  mat-sidenav {
+    width: 20%;
+  }
+
+  mat-sidenav.mobile {
+    width: 40% !important;
+  }
+
+.material-icons.md-48{
+    color: white
+}
+  .material-icons {
+    font-size: 48px;
+    position: relative;
+    left: -90px;
+    }
+  .priceicon {
+    height: 24px;
+  }
+  .mat-tab-group {
+    text-align: center;
+    position: relative;
+    top: 35px;
+  }
+  .mat-tab-header {
+  
+    width: 80%;
+    left: 9%;
+    border-bottom: 0px solid rgba(0,0,0,.12);
+  }
+  .mat-tab-label {
+    width: 33%;
+    /* background-color: #07a5ec; */
+    border-style: solid;
+     border-color: #0a95cc; 
+    border-width: 1px
+  }
+  .mat-tab-group.mat-primary .mat-ink-bar  {
+    background-color: white;
+  }
+  .mat-tab-label-active {
+    background-color: #0a95cc;
+  }
+  
+  .mat-tab-label:last-child {
+    border-radius: 0px 7px 6px 0px;
+  }
+  .mat-tab-label:first-child {
+    border-radius: 6px 0px 0px 6px;
+  }
+  
+  .mat-tab-group.mat-primary .mat-tab-label:focus {
+    background-color: #0a95cc
+  }
+
+.cycle-pager{
+  top:220px !important;
+  PADDING-LEFT: 50%;
+  margin-left: 3px;
+}
+.cycle-pager span{
+  font-family: arial;
+  font-size: 32px;
+  width: 12px;
+  height: 16px;
+  display: inline-block;
+  color: #000;
+  cursor: pointer;
+  opacity: 0.7;
+}

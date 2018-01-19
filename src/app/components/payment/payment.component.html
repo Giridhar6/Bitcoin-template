@@ -1,0 +1,56 @@
+<mat-toolbar color="primary">
+    <div class="page-title">Make payments</div>
+</mat-toolbar>
+
+<button mat-menu-item [matMenuTriggerFor]="payments">Payments</button>
+<button mat-menu-item [matMenuTriggerFor]="PayBills">PAY BILLS</button>
+<mat-menu #PayBills="matMenu">
+  <button mat-menu-item>Electricity</button>
+  <button mat-menu-item>Gas</button>
+  <button mat-menu-item>LanLine</button>
+  <button mat-menu-item>CreditCard</button>
+</mat-menu>
+
+<mat-menu #payments="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="recharge">RECHARGE</button>
+  <button mat-menu-item [matMenuTriggerFor]="PayBill">PAY BILLS</button>
+</mat-menu>
+
+<mat-menu #recharge="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="MobileRecharge">MobileRecharge</button>
+  <button mat-menu-item [matMenuTriggerFor]="DTHRecharge">DTHRecharge</button>
+  <button mat-menu-item>Birds</button>
+  <button mat-menu-item>Mammals</button>
+</mat-menu>
+
+<mat-menu #PayBill="matMenu">
+  <button mat-menu-item>Electricity</button>
+  <button mat-menu-item>Gas</button>
+  <button mat-menu-item>LanLine</button>
+  <button mat-menu-item>CreditCard</button>
+</mat-menu>
+
+<mat-menu  #MobileRecharge="matMenu">
+  <button mat-menu-item (click)="airtelPayment()">Airtel</button>
+  <button mat-menu-item   >Idea</button>
+  <button mat-menu-item>Vodaphone</button>
+</mat-menu>
+
+<mat-menu #DTHRecharge="matMenu">
+  <button mat-menu-item>DishTv</button>
+  <button mat-menu-item>AirTel</button>
+  <button mat-menu-item>TATA</button>
+</mat-menu>
+
+<mat-menu #reptiles="matMenu">
+  <button mat-menu-item>Banded Day Gecko</button>
+  <button mat-menu-item>Banded Gila Monster</button>
+  <button mat-menu-item>Black Tree Monitor</button>
+  <button mat-menu-item>Blue Spiny Lizard</button>
+  <button mat-menu-item disabled>Velociraptor</button>
+</mat-menu>
+
+
+<!-- Copyright 2017 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

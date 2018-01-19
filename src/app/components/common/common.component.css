@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu-container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
+}
+
+.menu-container mat-toolbar mat-toolbar-row a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.bit-coin-icon {
+  /* max-width: 140%; */
+  height: auto;
+  vertical-align: middle;
+}
+
+div.page-title {
+  width: 100%;
+  text-align: center;
+}
+
+div.page-title h1 {
+  font-weight: 800;
+  font-size: 130%;
+}
+.container .actions-container {
+  /* height: 30%; */
+}
+.container .actions-container .btc-balance {
+  height: 30%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+
+.container .actions-container .btc-balance .icon {
+  height: 100%;
+  width: 3%;
+}
+.container .actions-container .btc-balance .icon.mobile {
+  width: 10%;
+}
+
+.container .actions-container .btc-balance span {
+  margin-left: 2%;
+  font-weight: 600;
+}
+
+.container .actions-container .in-out-amount {
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.container .actions-container .in-out-amount .in-amount, .container .actions-container .in-out-amount .out-amount {
+  width: 50%;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container .actions-container .in-out-amount .in-amount .data-title, .container .actions-container .in-out-amount .out-amount .data-title {
+  text-align: left;
+  width: 90%;
+  height: 10%;
+  font-weight: 500;
+}
+
+.container .actions-container .in-out-amount .in-amount .data-value, .container .actions-container .in-out-amount .out-amount .data-value {
+  width: 90%;
+  text-align: center;
+}
+
+.container .content-container {
+  height: fit-content;
+}
+
+.container .content-container .transaction-amount {
+  direction: rtl;
+  padding: 4% 4% 1% 4%;
+}
+
+.container .content-container .transaction-amount mat-form-field {
+  width: 80%;
+}
+
+#transactionAmount {
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  font-size: 130%;
+  font-weight: 800;
+  &:focus {
+    outline:none;
+  }
+}
+
+.container .content-container .transaction-increment-counter, .container .content-container .receive-order {
+  text-align: center;
+}
+
+.container .content-container .transaction-increment-counter button {
+  margin: 1px 3px;
+  border-radius: 10%;
+  border: 2px solid lightblue;
+  color: dodgerblue;
+}
+
+.container .content-container .buy-sell {
+  height: 30%;
+  text-align: center;
+  margin: 5%;
+}
+
+.container .content-container .buy-sell button {
+  border-radius: 0%;
+  color: white;
+  width: 80%;
+  height: 80%;
+  font-size: 150%;
+  background-color: #29a4e2;
+}
+
+.container .content-container .buy-sell button.mobile {
+  border-radius: 3%;
+}
+
+.container .content-container .receive-order button {
+  margin: 2px 3px;
+  border-radius: 6%;
+  color: white;
+  width: 40%;
+}
+
+.container .content-container .receive-order button:nth-child(1) {
+  background-color: lightcoral;
+}
+.container .content-container .receive-order button:nth-child(2) {
+  background-color: lightseagreen;
+}
+
+
+.container .content-container .steps-counter {
+  height: 30%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+
+::ng-deep .container .content-container .steps-counter mat-icon {
+  font-size: 18px !important;
+  height: 18px !important;
+  width: 18px !important;
+}

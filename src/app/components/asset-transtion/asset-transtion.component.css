@@ -1,0 +1,95 @@
+.basic-container {
+  padding: 5px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+.mat-toolbar.mat-primary {
+    background: #0a95cc;
+    min-height: 105px;
+}
+.mat-toolbar-row {
+align-items: center;
+top: 15px;
+position: relative;
+}
+.mat-toolbar-row span {
+
+    position: relative;
+    left: 44%;
+}
+
+.material-icons {
+
+    font-size: 48px;
+    position: relative;
+    left: -90px;
+}
+.mat-tab-group.mat-primary {
+/* position: relative;
+left: 40%;
+width: 30%;
+text-align: center; */
+}
+.mat-tab-group {
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+.mat-tab-header {
+
+    width: 80%;
+    left: 9%;
+    border-bottom: 0px solid rgba(0,0,0,.12);
+}
+.mat-tab-label {
+    width: 33%;
+    /* background-color: #07a5ec; */
+    border-style: solid;
+     border-color: #0a95cc;
+    border-width: 1px
+}
+
+/* .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+     background-color: white;
+} */
+
+.mat-tab-group.mat-primary .mat-ink-bar  {
+    background-color: white;
+}
+.mat-tab-label-active {
+    background-color: #0a95cc;
+}
+
+.mat-tab-label:last-child {
+    border-radius: 0px 7px 6px 0px;
+}
+.mat-tab-label:first-child {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.mat-ink-bar {
+    height: 0px;
+    opacity: 0;
+}
+
+.bit-coin-img {
+    width: 120%;
+    position: relative;
+    top: -23px;
+    right: 12px;
+    }
+
+
+
+
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

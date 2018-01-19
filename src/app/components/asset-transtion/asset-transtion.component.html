@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row style="align-items: center">
+    <span >資産遷移</span><i class="material-icons md-48">keyboard_arrow_left</i>
+    <!-- <div class="bit-coin"><img [src]="assets/images/bitcoin_icon.jpg"> -->
+      <mat-icon class="material-icons">
+          <div class="">
+            <img class="priceicon bit-coin-img" src="./../../../assets/images/bitcoin_icon.jpg">
+          </div>
+        </mat-icon>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>
+<mat-tab-group>
+  <mat-tab label="日次">
+    <h1>+ 14,075 円</h1>
+    <h3>累積日次損益 </h3>
+
+    <div (window:resize)="onResize($event)">
+      <nvd3 [options]="options" [data]="data"></nvd3>
+    </div>
+  </mat-tab>
+  <mat-tab label="月次">
+      <h1>+ 14,075 円</h1>
+      <h3>累積日次損益 </h3>
+    <div (window:resize)="onResize($event)">
+      <nvd3 [options]="options" [data]="data"></nvd3>
+    </div>
+  </mat-tab>
+  <mat-tab label="年次">
+      <h1>+ 14,075 円</h1>
+      <h3>累積日次損益 </h3>
+      <div (window:resize)="onResize($event)">
+      <nvd3 [options]="options" [data]="data" ></nvd3>
+    </div>
+  </mat-tab>
+</mat-tab-group>

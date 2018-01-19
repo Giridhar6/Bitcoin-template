@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="menu-container" #menuContainer>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <a routerLink="/"><mat-icon>keyboard_arrow_left</mat-icon>
+        <img class="bit-coin-icon" class="bit-coin-icon" src="./../../../assets/images/logo_@3x.png">
+      </a>
+        <div class="page-title">ビットコイン</div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+  <div class="actions-container" #actionContainer [ngStyle]="{'margin-top':menuHeight}" (window.resize)="changeMarginTop($event)">
+      <div class="btc-balance">
+        <img class="icon" [class.mobile]="mobileQuery.matches" src="./../../../assets/images/btc.png" alt="">
+        <span>1,20520456 BTC / 9,461 円</span>
+      </div>
+      <hr>
+      <div class="in-out-amount">
+        <div class="in-amount">
+          <div class="data-title">価格 (BTC/JPY)</div>
+          <div class="data-value">
+            <h2>743,018</h2>
+            <mat-progress-bar mode="determinate" value="20" color="warn"></mat-progress-bar>
+          </div>
+        </div>
+        <div class="out-amount">
+            <div class="data-title">価格 (BTC/JPY)</div>
+            <div class="data-value">
+              <h2>713,964</h2>
+              <mat-progress-bar mode="determinate" value="5" color="primary"></mat-progress-bar>
+            </div>
+        </div>
+      </div>
+      <hr>
+  </div>
+  <div class="content-container">
+      <div class="transaction-amount">
+        <mat-form-field>
+          <mat-label align="right" #transactionAmountLabel>(BTC)</mat-label>
+          <input type="text" matInput id="transactionAmount" [value]="btcVal==0?0:btcVal.toLocaleString('en-us', {minimumFractionDigits: 2})">
+          <mat-hint>予想価格：0 円</mat-hint>
+        </mat-form-field>
+      </div>
+      <div class="transaction-increment-counter">
+        <button mat-button (click)="btcVal=btcVal+1">+1</button>
+        <button mat-button (click)="btcVal=btcVal+ 0.1">+0.1</button>
+        <button mat-button (click)="btcVal=btcVal+0.01">+0.01</button>
+        <button mat-button (click)="btcVal=0">C</button>
+      </div>
+      <div class="buy-sell" >
+          <button *ngIf="canRequest" [class.mobile]="mobileQuery.matches" mat-button color="primary">注文を受け付けました</button>
+      </div>
+      <div class="receive-order">
+        <button mat-button color="primary" (click)="openDialog()">買う</button>
+        <button mat-button (click)="openDialog()" >売る</button>
+      </div>
+      <div class="steps-counter">
+        <div>
+          <mat-icon>fiber_manual_record</mat-icon>
+          <mat-icon>fiber_manual_record</mat-icon>
+          <a routerLink="/price"><mat-icon color="primary">fiber_manual_record</mat-icon></a>
+          <mat-icon>fiber_manual_record</mat-icon>
+        </div>
+      </div>
+  </div>
+</div>

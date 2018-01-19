@@ -1,0 +1,46 @@
+<div class="DialogBox">
+
+    <mat-toolbar color="primary" class="toolbarDesign" style="background: #0cb460; margin-top: -25px;">
+
+        <div class="center">
+            入出金
+        </div>
+
+    </mat-toolbar>
+
+    <div class="toolBars">
+        <mat-toolbar-row class="tab1">
+            <strong> 計算</strong>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row style="font-size: 30px;">
+            <strong> 1 BTC </strong>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row class="tab1">
+            <strong>計算</strong>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row style="font-size: 30px;">
+            <strong> 794,000 円 </strong>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row class="tab1">
+            <strong>計算</strong>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row style="font-size: 30px;">
+            <strong> 794,000 円 </strong>
+        </mat-toolbar-row>
+    </div>
+
+    <!-- Header toolbar design ends -->
+
+    <!-- second toolbar design ends -->
+
+    <mat-dialog-actions style="margin-top: 60px;">
+        <button mat-button mat-dialog-close> <strong >取り消す</strong> </button>
+        <button (click)="makeRequest()" mat-button [mat-dialog-close]="true" cdkFocusInitial style="background: #0cb460; color:white; margin-left: 70px;"> <strong> 据える</strong></button>
+    </mat-dialog-actions>
+
+</div>

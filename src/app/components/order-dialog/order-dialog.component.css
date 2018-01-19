@@ -1,0 +1,27 @@
+.toolbarSecond {
+    height: 200px;
+    /* background: #ffffff; */
+}
+
+.points {
+    padding-left: 175px;
+}
+
+.circle {
+    color: #f18819;
+}
+
+.points1 {
+    padding-left: 160px;
+}
+
+.points2 {
+    font-size: 12px;
+    padding-left: 125px;
+    margin: 0px;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,139 @@
+ .menu-container mat-toolbar mat-toolbar-row a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.bit-coin-icon {
+  /* max-width: 140%; */
+  height: auto;
+  max-height: 30%;
+  vertical-align: middle;
+}
+
+div.page-title {
+  width: 100%;
+  text-align: center;
+}
+
+div.page-title h1 {
+  font-weight: 800;
+  font-size: 130%;
+}
+
+ .bit-coin.header {
+     text-align: center;
+     margin: auto;
+ }
+
+ .bit-coin.header mat-icon {
+     margin-right: 10px;
+ }
+
+ .bit-coin.header mat-icon .bit-coin-icon {
+     max-width: 105%;
+     height: auto;
+     vertical-align: middle;
+     margin-bottom: 3vh;
+ }
+
+ mat-icon .qr-code-icon {
+     max-width: 140%;
+     height: auto;
+     vertical-align: middle;
+ }
+ /* sunil css starts */
+
+ .toolbarDesign {
+     background: linear-gradient(to right, rgba(4, 155, 226, 0.9), rgba(31, 99, 197, 0.93));
+     height: 12vh;
+ }
+
+ .left_icon {
+     width: 38px;
+     display: table;
+     margin-left: -8px;
+ }
+
+ .left_icon1 {
+     margin-top: 20px;
+ }
+
+ .toolbarRow {
+     height: 12vh;
+ }
+
+ .material-icons {
+     font-size: 52px;
+ }
+
+ .example-spacer {
+     flex: 1 1 auto;
+ }
+
+ .example-icon {
+     padding: 0 14px;
+ }
+
+ .center {
+     text-align: center;
+     width: 100%;
+     padding-top: 25px;
+ }
+
+ .right {
+     text-align: right;
+     padding-right: 50px;
+     padding-top: 25px;
+ }
+
+ .example-card {
+     width: 400px;
+ }
+
+ .toolbarSecond {
+    height: 25%
+     /* background: #ffffff; */
+ }
+
+ .points {
+     padding-left: 175px;
+ }
+
+ .circle {
+     color: #f18819;
+ }
+
+ .points1 {
+     padding-left: 160px;
+ }
+
+ .points2 {
+     font-size: 12px;
+     padding-left: 125px;
+     margin: 0px;
+ }
+
+ .currency {
+     font-size: 25px;
+     color: rgb(247, 46, 46)
+ }
+
+ .currency1 {
+     font-size: 25px;
+     color: rgb(253, 201, 201);
+     padding-top: 4px;
+ }
+
+ .center1 {
+     width: 100%;
+     padding-bottom: 6px;
+     font-size: 15px;
+ }
+
+ .right1 {
+     text-align: right;
+     /* padding-right: 50px;
+    padding-top: 25px; */
+     padding-bottom: 6px;
+     font-size: 15px;
+ }

@@ -1,0 +1,76 @@
+<div class="main-container">
+  <div class="menu-container">
+    <!-- <mat-toolbar class="toolbar">
+      <i class="material-icons md-48">keyboard_arrow_left</i>
+      <mat-icon class="material-icons">
+        <div>
+          <img class="priceicon" src="./../../../assets/images/bitcoin_icon.jpg">
+        </div>
+      </mat-icon>
+      <h1 class="price header">
+        交換
+      </h1>
+    </mat-toolbar> -->
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <a routerLink="/"><mat-icon>keyboard_arrow_left</mat-icon>
+        <img class="bit-coin-icon" class="bit-coin-icon" src="./../../../assets/images/logo_@3x.png">
+      </a>
+        <div class="page-title">交換</div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card>
+      <mat-card-content>
+        <table>
+          <tr>
+            <td>1.20520456BTC/9461</td>
+            <td style=" text-align: right;width: 100%">LTP721,857</td>
+          </tr>
+        </table>
+      </mat-card-content>
+    </mat-card>
+    <br>
+    <div class="tabs">
+
+      <mat-tab-group class="mat-tab-group">
+        <mat-tab label="1時間">
+          <div style="text-align: center">
+            <h3>721,857円</h3>
+            <h3>ビットコイン最終売買価格</h3>
+          </div>
+          <div class="tab1.content">
+            <nvd3 [options]='options' [data]='data'>
+            </nvd3>
+          </div>
+        </mat-tab>
+        <mat-tab label="1日">
+          <div style="text-align: center">
+            <h3>721,857円</h3>
+            <h3>ビットコイン最終売買価格</h3>
+          </div>
+          <nvd3 [options]='options' [data]='data'>
+
+          </nvd3>
+        </mat-tab>
+        <mat-tab label="1週間">
+          <div style="text-align: center">
+            <h3>721,857円</h3>
+            <h3>ビットコイン最終売買価格</h3>
+          </div>
+          <nvd3 [options]='options' [data]='data'>
+
+          </nvd3>
+        </mat-tab>
+        <mat-tab label="1月間">4th tab</mat-tab>
+        <mat-tab label="1年">4th tab</mat-tab>
+      </mat-tab-group>
+    </div>
+    <div class="cycle-pager">
+      <span class="">•</span>
+      <span class="">•</span>
+      <span class="cycle-pager-active">•</span>
+      <span class="">•</span>
+    </div>
+  </div>
+</div>

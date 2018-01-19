@@ -1,0 +1,151 @@
+<div class="main-container">
+  <div class="menu-container">
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>
+          menu
+        </mat-icon>
+      </button>
+      <h1 class="bit-coin header">
+        <img class="bit-coin-icon"  src="./../../../assets/images/logo_@2x.png">
+      </h1>
+      <div *ngIf="mobileQuery.matches">
+        <mat-icon>
+          <img class="qr-code-icon" src="./../../../assets/images/QR_icon.svg.png">
+        </mat-icon>
+      </div>
+    </mat-toolbar>
+    <div class="menu-content">
+      <mat-sidenav-container>
+        <mat-sidenav mode="over" #sidenav [class.mobile]="mobileQuery.matches">
+          <nav>
+            <h3>ヘッダー</h3>
+            <ul>
+              <li>
+                <a routerLink="/" routerLinkActive="menu-selected">ホーム</a>
+              </li>
+              <li>
+                <a (click)="selectedTabIndex=0">販売所</a>
+              </li>
+              <li>
+                <a routerLink="/f" routerLinkActive="menu-selected" (click)="selectedTabIndex=1">取引所</a>
+              </li>
+            </ul>
+          </nav>
+        </mat-sidenav>
+        <mat-sidenav-content class="actions-and-content">
+          <div class="actions-container">
+            <mat-toolbar color="primary">
+              <div class="data-item">
+                <span class="data-item-title">現在の資産</span>
+                <span class="data-item-value">896,295 円</span>
+              </div>
+              <div class="data-item-arrow">
+                <mat-icon (click)="navTo('/asset/list')">
+                  keyboard_arrow_right
+                </mat-icon>
+              </div>
+            </mat-toolbar>
+            <mat-toolbar color="primary">
+              <div class="data-item">
+                <span class="data-item-title">日次損益</span>
+                <span class="data-item-value">+14,069 円</span>
+              </div>
+              <div class="data-item-arrow">
+                <mat-icon (click)="navTo('/asset')">
+                  keyboard_arrow_right
+                </mat-icon>
+              </div>
+            </mat-toolbar>
+          </div>
+          <div class="sidenav-main-content" [class.mobile]="mobileQuery.matches">
+            <mat-tab-group dynamicHeight="true" id="custom-button-tab" appCustomTab [selectedIndex]="selectedTabIndex">
+              <mat-tab>
+                <ng-template mat-tab-label>
+                  <button mat-raised-button color="primary">販売所</button>
+                </ng-template>
+                <div>
+                  <mat-grid-list cols="1" [rowHeight]="mobileQuery.matches?'5:1':'20:1'">
+                    <mat-grid-tile class="buy-sell-tile" (click)="navToTransact()">
+                      <div class="buy-sell-item">
+                        <div class="icon" [class.mobile]="mobileQuery.matches">
+                          <img src="./../../../assets/images/btc.png" alt="">
+                        </div>
+                        <div class="item-description">
+                          <span class="item-description-name">BTC/JPY</span>
+                          <span class="item-description-value">723,000 円</span>
+                        </div>
+                        <div class="item-chart">
+                          <mat-icon>
+                            keyboard_arrow_right
+                          </mat-icon>
+                        </div>
+                      </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile class="buy-sell-tile" (click)="navToTransact()">
+                      <div class="buy-sell-item">
+                        <div class="icon" [class.mobile]="mobileQuery.matches">
+                          <img src="./../../../assets/images/btc.png" alt="">
+                        </div>
+                        <div class="item-description">
+                          <span class="item-description-name">BTC/INR</span>
+                          <span class="item-description-value">1823,000 </span>
+                        </div>
+                        <div class="item-chart">
+                          <mat-icon>
+                            keyboard_arrow_right
+                          </mat-icon>
+                        </div>
+                      </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile class="buy-sell-tile" (click)="navToTransact()">
+                      <div class="buy-sell-item">
+                        <div class="icon" [class.mobile]="mobileQuery.matches">
+                          <img src="./../../../assets/images/btc.png" alt="">
+                        </div>
+                        <div class="item-description">
+                          <span class="item-description-name">BTC/USD</span>
+                          <span class="item-description-value">7213,000 </span>
+                        </div>
+                        <div class="item-chart">
+                          <mat-icon>
+                            keyboard_arrow_right
+                          </mat-icon>
+                        </div>
+                      </div>
+                    </mat-grid-tile>
+                  </mat-grid-list>
+                </div>
+              </mat-tab>
+              <mat-tab>
+                <ng-template mat-tab-label>
+                  <button mat-raised-button color="primary">取引所</button>
+                </ng-template>
+                <div>
+                  <mat-grid-list cols="1" [rowHeight]="mobileQuery.matches?'5:1':'20:1'">
+                      <mat-grid-tile class="buy-sell-tile" (click)="navToTransact()">
+                          <div class="buy-sell-item">
+                            <div class="icon" [class.mobile]="mobileQuery.matches">
+                              <img src="./../../../assets/images/btc.png" alt="">
+                            </div>
+                            <div class="item-description">
+                              <span class="item-description-name">BTC/JPY</span>
+                              <span class="item-description-value">723,000 円</span>
+                            </div>
+                            <div class="item-chart">
+                              <mat-icon>
+                                keyboard_arrow_right
+                              </mat-icon>
+                            </div>
+                          </div>
+                        </mat-grid-tile>
+                  </mat-grid-list>
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+  </div>
+</div>
